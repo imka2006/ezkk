@@ -116,27 +116,27 @@ const getChedule = async () => {
                 mvp.value.push(data[day]);
             });
 
-            mvp.value = mvp.value.map(item => item.sort((a, b) => {
-                if (a.time < b.time) {
-                    return -1;
-                }
-                if (a.time > b.time) {
-                    return 1;
-                }
-                return 0;
-            }))
+            // mvp.value = mvp.value.map(item => item.sort((a, b) => {
+            //     if (a.time < b.time) {
+            //         return -1;
+            //     }
+            //     if (a.time > b.time) {
+            //         return 1;
+            //     }
+            //     return 0;
+            // }))
 
-            mvp.value = mvp.value.map((item) => {
-                const el = []
-                for (let i = 0; i < 5; i++) {
-                    if(item[i]) {
-                        el.push(item[i])
-                    } else {
-                        el.push({})
-                    }
-                }
-                return el
-            })
+            // mvp.value = mvp.value.map((item) => {
+            //     const el = []
+            //     for (let i = 0; i < 5; i++) {
+            //         if(item[i]) {
+            //             el.push(item[i])
+            //         } else {
+            //             el.push({})
+            //         }
+            //     }
+            //     return el
+            // })
 
             console.log(mvp.value);
         })

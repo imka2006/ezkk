@@ -6,15 +6,25 @@
                     <h1 class="hero-title">Добро пожаловать в ЕЗК!</h1>
                     <p class="hero-description"> Приложение ЕДИНАЯ ЦИФРОВАЯ ЗАЧЕТНАЯ КНИЖКА это доступ в режиме онлайн к
                         любой учебной информации, предоставленный преподавателям, родителям и студентам.</p>
-                    <div v-show="!store.state.account" class="hero-btns">
+                    <div v-if="!store.state.account" class="hero-btns">
                         <button class="hero-signin" @click="store.state.signupModel = !store.state.signupModel">Войти</button>
                         <button class="hero-signup" @click="store.state.signipModel = !store.state.signipModel">Регистрация</button>
                     </div>
+                    <div v-else class="hero-another_btns-another">
+                        <router-link   to="/schedule" class="hero-signin">
+                        Войти в личный кабинет  
+                        </router-link>
+                    </div>
                 </div>
                 <img class="hero-img" src="../../assets/image/hero/image.png" alt="hero-img" />
-                <div v-show="!store.state.account" class="hero-another_btns">
+                <div v-if="!store.state.account" class="hero-another_btns">
                     <button class="hero-signin" @click="store.state.signupModel = !store.state.signupModel">Войти</button>
                     <button class="hero-signup" @click="store.state.signipModel = !store.state.signipModel">Регистрация</button>
+                </div>
+                <div v-else class="hero-another_btnss">
+                        <router-link   to="/schedule" class="hero-signin">
+                        Войти в личный кабинет  
+                        </router-link>
                 </div>
             </div>
         </div>
@@ -65,6 +75,10 @@ const store = useStore()
          display: flex;
          align-items: center;
          gap: 18px;
+     }
+     &-another_btnss { 
+        display: none;
+        margin-top: 30px;
      }
 
      &-another_btns {
@@ -128,6 +142,12 @@ const store = useStore()
 
          &-another_btns {
              display: flex;
+         }
+         &-another_btnss {
+             display: flex;
+         }
+         &-another_btns-another {
+            display: none;
          }
 
          &-description {
