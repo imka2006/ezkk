@@ -63,7 +63,7 @@ import PurpleBtnLink from "../../components/btns/PurpleBtnLink.vue"
     }
 
     &-btn_another {
-        display: none;
+        display: none  !important;
     }
 
     &-img {
@@ -91,11 +91,11 @@ import PurpleBtnLink from "../../components/btns/PurpleBtnLink.vue"
         }
 
         &-btn {
-            display: none;
+            display: none !important;
         }
 
         &-btn_another {
-            display: unset;
+            display: unset !important;
         }
     }
 }
