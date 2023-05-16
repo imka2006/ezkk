@@ -29,7 +29,7 @@
       <div class="footer-bottom">
         <p class="footer-description">2022 - 2023. Электронная зачетная книжка</p>
         <ul class="footer-cocial-list">
-          <li class="footer-cocial-item"><a href="mailto:centertehnologies@gmail.com" target="_blank"><img src="	https://arthursabr.pythonanywhere.com/static/img/email.svg" alt="gmail"></a></li>
+          <li class="footer-cocial-item"><a href="mailto:centertehnologies@gmail.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/481/481659.png" style="width: 27px;" alt="gmail"></a></li>
           <li class="footer-cocial-item"><a href="https://go.2gis.com/l5ven" target="_blank"><img style="width: 25px; height: 25px;" src="https://arthursabr.pythonanywhere.com/static/img/location.png" alt="2gis"></a></li>
           <li class="footer-cocial-item"><a href="https://instagram.com/centertehnologies?igshid=NTc4MTIwNjQ2YQ==" target="_blank"><img src="../assets/icons/footer/instagram.svg" alt="instagram"></a></li>
           <li class="footer-cocial-item"><a href="https://wa.me/996505840888" target="_blank"><img src="https://arthursabr.pythonanywhere.com/static/img/whatsapp.svg" alt="whatsapp"></a></li>
@@ -39,9 +39,7 @@
   </footer>
 </template>
 
-<script setup>
-import FooterIcon from '../assets/icons/footer/FooterIcon.vue';
-
+<script setup>  
 </script>
 
 <style lang="scss">
